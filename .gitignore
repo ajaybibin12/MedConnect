@@ -1,0 +1,47 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# ---- Virtual Environment ----
+backend/.env/
+venv/
+env/
+.venv/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Environment / Secrets ----
+.env
+.env.*
+!backend/.env/   # this line UN-ignores the folder itself if you want to keep the folder name but still ignore contents
+backend/.env/**  # ignore all its contents
+
+# ---- Build / Packaging ----
+build/
+dist/
+pip-wheel-metadata/
+
+# ---- Node (if frontend present) ----
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ---- Others ----
+*.bak
+*.tmp
+credentials.json
